@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#33000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/exo_textview_topicname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingBottom="24dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="8dp"
+        android:textSize="18sp"
+        android:textColor="#ffff"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <!--        <ImageButton android:id="@id/exo_prev"-->
+        <!--            style="@style/ExoMediaButton.Previous"/>-->
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/exo_volume_off_button"-->
+        <!--            style="@style/ExoMediaButton"-->
+        <!--            android:src="@drawable/ic_volume_off_black_24dp"-->
+        <!--            android:visibility="gone"/>-->
+
+        <ImageButton
+            android:id="@+id/exo_playback_speed_setting"
+            style="@style/ExoMediaButton"
+            android:layout_weight="1"
+            android:src="@drawable/ic_timer"
+            android:tint="@color/backgroundColor" />
+
+        <ImageButton
+            android:id="@id/exo_rew"
+            style="@style/ExoMediaButton.Rewind"
+            android:layout_weight="1"
+            android:tint="@color/backgroundColor" />
+
+        <!--        <ImageButton android:id="@id/exo_shuffle"-->
+        <!--            style="@style/ExoMediaButton"/>-->
+
+        <!--        <ImageButton android:id="@id/exo_repeat_toggle"-->
+        <!--            style="@style/ExoMediaButton"/>-->
+
+        <ImageButton
+            android:id="@id/exo_play"
+            style="@style/ExoMediaButton.Play"
+            android:layout_weight="1"
+            android:tint="@color/backgroundColor" />
+
+        <ImageButton
+            android:id="@id/exo_pause"
+            style="@style/ExoMediaButton.Pause"
+            android:layout_weight="1"
+            android:tint="@color/backgroundColor" />
+
+        <ImageButton
+            android:id="@id/exo_ffwd"
+            style="@style/ExoMediaButton.FastForward"
+            android:layout_weight="1"
+            android:tint="@color/backgroundColor" />
+
+        <ImageButton
+            android:id="@+id/exo_fullscreen_button"
+            style="@style/ExoMediaButton"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fullscreen_black_24dp"
+
+            android:tint="@color/backgroundColor" />
+
+        <ImageButton
+            android:id="@+id/exo_fullscreen_exit_button"
+            style="@style/ExoMediaButton"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fullscreen_exit_black_24dp"
+
+            android:tint="@color/backgroundColor"
+            android:visibility="gone" />
+
+        <!--        <ImageButton android:id="@id/exo_next"-->
+        <!--            style="@style/ExoMediaButton.Next"/>-->
+
+
+        <!--        <ImageButton android:id="@id/exo_vr"-->
+        <!--            style="@style/ExoMediaButton.VR"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+
+            android:textColor="#ffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@id/exo_progress_placeholder"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="#ffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/exo_aspect_ration_settings"
+            style="@style/ExoMediaButton"
+            android:src="@drawable/ic_aspect_ratio_black_24dp"
+            android:tint="@color/backgroundColor" />
+
+    </LinearLayout>
+</LinearLayout>
